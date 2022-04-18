@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<title> Login Page </title>
+<style> 
+
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: rgb(160, 87, 99);
+}
+button { 
+       background-color: #aad3ac; 
+       width: 50%;
+        color: rgb(255, 55, 0); 
+        padding: 15px; 
+        margin: 10px 0px; 
+        border: none; 
+        cursor: pointer; 
+         } 
+ input[type=text], input[type=password] { 
+        width: 50%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 2px solid green; 
+        box-sizing: border-box; 
+    }
+ button:hover { 
+        opacity: 0.7; 
+    } 
+  .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px;
+        margin: 10px 5px;
+    } 
+      
+   
+ .container { 
+        padding: 25px; 
+        background-color: lightblue;
+    } 
+</style> 
+</head>  
+<body>  
+    <center> <h1>  Login Form </h1> </center> 
+        <div class="container"> 
+            <label>Username : </label> 
+            <input type="text" placeholder="Enter Username" name="text" id="Username">
+        </br>
+            <label>Password : </label> 
+
+        
+            <input type="Password" placeholder="Enter Password" name="text" id="Password">
+    </br>
+            
+            <button onclick="login()">Login</button> 
+</br>
+            <input type="checkbox" checked="checked"> Remember me 
+            <button type="button" class="cancelbtn"> Cancel</button> 
+            Forgot <a href="#"> password? </a> 
+            <footer>
+                <p>Feel free to contact<br>
+                <a href="vraj@gamil.com">vraj@gmail.com</a></p>
+              </footer>
+        </div> 
+    <script type="text/javascript">
+        function login()
+        {
+            var uname=document.getElementById('Username').value;
+            var pass=document.getElementById('Password').value;
+            
+            if(uname=="vivek" && pass=="123")
+            {
+                
+            location.assign("file:///C:/Users/EK994DY/OneDrive%20-%20EY/Desktop/hdfs/page.html");
+            }
+            else
+            {
+               
+                window.alert("login failed");
+            }
+        }    
+   </script>
+        </body>
+        </html>
